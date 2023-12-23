@@ -1,0 +1,621 @@
+* {
+   margin: 0; 
+   font-family: sans-serif;
+}
+p{
+    margin: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #111315;
+}
+    /* BACKGROUND IMG */
+.imgbackground{
+    background-image: url();
+}
+    /* main container  latest code */
+.main-container{
+    position: relative;
+    margin: 0 auto;
+    width: 1427px;
+    margin-top: 54px;
+}
+
+nav{
+    box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.55);
+   -webkit-box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.55);
+   -moz-box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.55);
+    background-color: #212327;
+    z-index: 999999;
+    position: fixed;
+    top:0px;
+    width: 100%;
+}
+
+.navbar{    
+   width: auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 13px;
+   color: black;
+   margin-bottom: 0;
+}
+.navbar-menus{
+    display: table;
+}
+
+.navbar ul li{
+   list-style: none;
+   display: inline-block;
+   margin: 0 20px;
+   position: relative;
+   font-size: 17px;
+   vertical-align: middle;
+   display: table-cell;
+   padding: 0 20px;
+}
+
+.navbar img{
+    position: relative;
+    width: 100px;
+    height: auto;
+ }
+
+.navbar ul li a{    
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+    padding: 10px 10px;
+}   
+     /* new hover latest code */
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background: rgba(255, 0, 0, .3);
+}
+
+/*.navbar ul li::after{*/
+/*    content: '';*/
+/*    height: 3px;*/
+/*    width: 0;*/
+/*    background-color:  crimson;     */
+/*    position: absolute;*/
+/*    left: 0;*/
+/*    bottom: -10px;*/
+/*    transition: 0.3s;*/
+/*}*/
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.Home{
+   color: black;
+    margin-top: 95px;
+}
+
+.GALLERY{
+    text-align: center;
+    color: black
+}
+
+.aboutUs{   
+    text-align: center;
+    color: black
+}
+
+.ContactUs{
+    text-align: center;
+    color: black
+}
+    /* dropdown for services */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+   
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.text-box{
+    width: 90%;
+    margin-top: 15%;
+    padding-bottom: 30px;
+    color: red;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-shadow: 2px 1px 3px white;
+}
+
+.text-box h1{
+    font-size: 62px;
+    margin-top:-63px;
+
+}
+
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: whitesmoke;
+}
+
+.text-box1{
+    width: 60%;
+    padding-top: 10px;
+    margin-top:  25px;
+    color: red;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-shadow: 2px 1px 3px white;
+}
+
+.text-box1 h1{
+    font-size: 62px;
+    position: relative;
+
+}
+
+
+.text-box1 p{
+    margin: 25px 0 40px;
+    font-size: 14px;
+    color: whitesmoke;
+    position: relative;
+}
+
+.float-container {
+    width: auto;
+    padding: 20px;
+    margin-top: 95px;
+}
+
+.float-child {
+    width: 46%;
+    float: right;
+    padding: 25px;
+}
+
+.float-child img{
+    width: 100%;
+    padding-top: 15px;
+    border-radius: 5px;
+}
+
+.float-child button{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    font-size: 40px;
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    background: #000000;
+    color: #FFFFFF;
+    border-radius: 5px;
+    font-weight: 700;
+    line-height: 1;
+
+    
+}
+
+.float-child button a{
+    text-decoration: none;
+    color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+}
+
+.float-child button a:hover{
+    text-decoration: none;
+    color: red;
+}
+
+/* HIDE ON DESKTOP */
+
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+@media (max-width:360px)  { 
+
+    .desktop-only{
+        display: none;
+    }
+
+    .navbar ul li {
+        margin: 0 13px;
+    }
+}
+
+
+ .container{
+   display:flex;
+   background: #212325;
+   width: 1420px;
+ }
+ .card{
+    height: 200px;
+    margin: 10px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+     position: relative;
+ }
+
+ img{
+    height: auto;
+    width: 266px;
+    border-radius: 5px;
+    transition: .5s;
+    cursor: pointer;
+ }
+
+
+ .intro{
+    height: 70px;
+    width: 260px;
+    padding: 13px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 200px;
+    overflow: hidden;
+    background: rgba(27, 27, 27,0.5);
+    color: white;
+    transition: .5s; 
+ }
+ 
+
+h1{
+    color: whitesmoke;
+    text-align: center;
+}
+
+.Homepage{
+    font-size: 75px;
+    margin-top: 230px;
+    color: rgb(227, 13, 13);
+    text-shadow: 5px 0px 3px black;
+    font-weight: bold;
+    font-family: serif;
+}
+
+.ServicePiercing{
+    color: white;
+}
+
+p{
+    color: whitesmoke;
+}
+
+ .gallery h1{
+    margin: 10px;
+    font-size: 30px;
+    visibility: hidden;
+    opacity: 0;
+    font-weight: 20px;
+    
+ }
+ 
+ .gallery p{
+    font-weight: 20px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+    
+ }
+
+ span{
+    font-weight: bold;
+ }
+
+.card:hover{
+    cursor: pointer;
+}
+
+.card:hover .intro{
+    height: 205px;
+    top: 0;
+    background: transparent;
+}
+.card:hover p{
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.card:hover img{
+    transform: scale(1.1) rotate(-3deg);
+}
+
+
+.banner-area{
+    background: url("image/banner.jpg");
+    height: 551px;
+    text-align: center;
+    margin-top: -2px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3px;
+}
+
+.banner-area__popout{
+    margin-top: 75px;
+}
+
+.btn-theme{
+    background: #212327;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 2px;
+}
+
+.btn-theme:hover{
+    background: rgb(87,90,96);
+    background: linear-gradient(180deg, rgba(87,90,96,1) 0%, rgba(33,35,39,1) 48%, rgba(87,90,96,1) 100%);
+}
+
+
+/*HELPER*/
+.mtop-10{margin-top: 10px;}
+.mtop-20{margin-top: 20px;}
+.mtop-30{margin-top: 30px;}
+.mtop-40{margin-top: 40px;}
+
+.text-white{
+    color: #FFFFFF;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-label{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 31.5%;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container-fluid{
+    width: 1383px;
+    margin: 0 auto;
+    margin-top:-40px;
+}
+
+.container-fluid-Gallery{
+    width: 1427px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: -67px;
+}
+.container-fluid-Gallery1{
+    width: 1427px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: -34px;
+}
+
+
+
+.footer-container {
+    justify-content: center;
+    box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.55);
+    -webkit-box-shadow: 4px -14px 23px 0px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.55);
+    bottom: 0;
+    width: 100%;
+    height:-7.5rem;
+    margin-top: 100px;
+    padding: 40px 0;
+    clear: both;
+    position: relative;
+    text-align: center;
+}
+
+.list {  
+    padding-left: 4%;
+    font-size: 12px;
+
+   
+}
+
+.list ul li {
+    display: inline-block;
+    margin-right: 40px;
+    
+}
+.list ul li a{
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+    padding:  10px;
+}   
+    
+
+.copyright {
+    margin-top: 3%;
+    padding-left: 4%;
+}
+
+
+a{
+    text-decoration: none !important; 
+}
+a:hover{
+    color: inherit;
+}
+    /*  contact us */
+.map {
+    overflow: hidden;
+    resize: none;
+    max-width: 100%;
+    width: 464px;
+    height: 400px;
+    padding-left: 6%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+
+.display-google-map {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+}
+
+.display-google-map img {
+    max-height: none;
+    max-width: none !important;
+    background: none !important;
+}
+
+
+
+.fillupform{
+    width: 100%;
+    float: right;
+}
+
+.contactus-container {
+    width: auto;
+
+}
+
+.contactus-float-child {
+    box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.55);
+    -webkit-box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.55);
+    background-color: #212327;
+    width: 35%;
+    float: left;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    justify-content: center;
+    margin-left: 95px;
+}
+
+.contactus-float-child2 {
+    width: 45%;
+    height: auto;
+    float: left;
+    padding-left: 5%;
+    box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.55);
+    -webkit-box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.55);
+    background-color: #212327;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.contactus-float-child2 input {
+    width: 90%;
+    justify-content: center;
+}
+
+.contactus-float-child2 label {
+    color: white;
+}
+
+
+.display-google-map{
+    height:100%; 
+    width:100%;
+    max-width:100%;
+}
+
+.display-google-map img{
+    max-height:none;
+    max-width:none!important;
+    background:none!important;
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img{
+    margin: 0 auto;
+    width: 685px;
+    margin-top: -4px;
+    height: 514px;
+    
+}
+
+
+.carousel-inner{
+    height: 470px;
+    margin-top: 69px;
+}
+
+
+.piercing-page .card {
+    height: 412px;
+}
+
+.piercing-page .card img {
+    height: auto;
+    width: 450px;
+}
+
+.piercing-page .intro {
+    height: 70px;
+    bottom: -70px;
+    padding-bottom: 32px;
+    top: auto;
+    width: 100%
+}
+.tattoo-page .card img {
+    height: auto;
+    width: 450px;
+}
+
+.tattoo-page .card {
+    height: 412px;
+}
+.tattoo-page .intro {
+    height: 70px;
+    bottom: -70px;
+    padding-bottom: 32px;
+    top: auto;
+    width: 100%
+}
+
+.card:hover .intro {
+    height: 76px;
+    top: auto;
+    bottom: 0;
+    background: transparent;
+}
