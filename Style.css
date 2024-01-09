@@ -248,6 +248,47 @@ nav{
     .navbar ul li {
         margin: 0 13px;
     }
+
+    .container-fluid {
+        width: 100% !important;
+    }
+     .container-fluid-Gallery {
+        width: 100% !important;
+     }
+     .container-fluid-Gallery1{
+        width: 100% !important;
+     }
+     
+}
+
+@media (max-width:700px)  { 
+
+    .desktop-only{
+        display: none;
+    }
+
+    .navbar ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0 0px;
+        position: relative;
+        font-size: 17px;
+        vertical-align: middle;
+        display: table-cell;
+        padding: 0 10px;
+    }
+
+    .container-fluid {
+        width: 100% !important;
+    }
+    .container-fluid-Gallery {
+        width: 100% !important;
+     }
+     .container-fluid-Gallery1 {
+        width: 100% !important;
+     }
+     
+
 }
 
 
